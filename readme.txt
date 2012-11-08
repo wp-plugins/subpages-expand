@@ -46,7 +46,7 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 == Screenshots ==
 1. Shortcode in parent post
 
-2. Public view showing subpage's titles with one expanded
+2. Public view showing each subpage's title with one expanded
 
 == Changelog ==
 
