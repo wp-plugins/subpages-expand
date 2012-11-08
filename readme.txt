@@ -31,17 +31,19 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 == Frequently Asked Questions ==
 
-= **Q.** Does this work on posts? =
+= Q. Does this work on posts? =
 
 **A.** No, only on pages
 
-= **Q.** I added the shortcode and nothing happened! =
+= Q. I added the shortcode and nothing happened! =
 
 **A1.** Make sure you spelled it correctly
 
 **A2.** Make sure you added the shortcode to a **page**, not a **post**.
 
 **A3.** Make sure your page has sub-pages.
+
+**A4.** Verify that your parent page and all child pages are published (not draft or pending)
 
 == Screenshots ==
 1. Shortcode in parent post
