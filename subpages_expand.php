@@ -86,17 +86,15 @@ if ( !class_exists('SupPagesExpand' ) ) {
 
 				// Filter through all pages and find Portfolio's children
 				$children = get_page_children( $post->ID, $all_wp_pages );
-				$child_contents = "
-";
+				$content = "";
 				foreach ( $children as $child ) {
-					$child_contents .= "<h2 class='subpage_title'>$child->post_title</h2>
+					$content .= "<h2 class='subpage_title'>$child->post_title</h2>
 <div class='subpage_content' style='display:none'>
 $child->post_content
-</div>
-";
+</div>";
 				}
-				$child_contents .= "
-<script type='text/javascript'>
+
+				$content .= "<script type='text/javascript'>
 /*<![CDATA[*/
 jQuery( function(){
 			jQuery('.subpage_title').click(function() {
@@ -104,14 +102,11 @@ jQuery( function(){
 		});
     });
 /*]]>*/
-</script>
-";
+</script>";
 
 				// echo what we get back from WP to the browser
-				$content = $child_tablinks . $child_contents;
 				return $content;
 		}
-
 	}
 }
 
