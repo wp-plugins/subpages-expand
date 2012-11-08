@@ -4,17 +4,19 @@ Tags: navigation, pages, jquery, effect, text, embedded content
 Requires at least: 3.3.2
 Tested up to: 3.4.2
 Stable tag: trunk
+License: GPLv3
 
-Add the shortcode [subpages_expand] to any parent page and all child pages will be rendered in that spot with title links that expand to each sub-page's content when clicked
+Add [subpages_expand] to any parent page. All child pages' titles are shown as links that expand to content when clicked
 
 == Description ==
 
 Intended users: editors, authors, contributers
 
-This plugin will allow you to display the content of subpages in the parent page in the form of expandible links.
+This plugin will allow you to display the content of subpages in form of expandible links.
 
-Simply add [subpages_expand] to any page and the subpages' content will be displayed at that location. See the screenshots.
+Simply add [subpages_expand] to any parent page. The titles of each of the subpages will be displayed there as clickable links. When the user clicks the link, it will expand, displaying the content of that child page.
 
+Clicking the title again will collapse the content.
 
 == Installation ==
 If you have a single file (ending in ".zip"), then use the *Upload* method. If you have multiple files, use the *Files* method. If you're installing from wordpress directly, just hit the big 'Install Plugin' button.
@@ -49,9 +51,13 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 3. Option screen
 
 == Changelog ==
+1.01 Released with a debug fix, some formatting for the titles and code cleanup
+
+0.90 CSS change to title cursor
+
 0.70 Initial
 
 == Upgrade Notice ==
 
-= 0.70 =
-Initial
+= 1.01 =
+Released

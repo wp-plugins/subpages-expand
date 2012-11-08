@@ -3,7 +3,7 @@
  * Plugin Name: Subpages as Expandible Links Shortcode
  * Plugin URI: http://hbjitney.com/subpages-expand.html
  * Description: Add [subpages_expand] to any page to embed all subpages as content-expandible links at that location.
- * Version: 0.70
+ * Version: 1.01
  * Author: HBJitney, LLC
  * Author URI: http://hbjitney.com/
  * License: GPL3
@@ -82,13 +82,14 @@ if ( !class_exists('SupPagesExpand' ) ) {
 				// If a page, then do split
 				// Get ids of children
 				$wpq = new WP_Query();
-				$all_wp_pages = $wpq->query(array('post_type' => 'page'));
+				$all_wp_pages = $wpq->query( array( 'post_type' => 'page' ) );
 
 				// Filter through all pages and find Portfolio's children
 				$children = get_page_children( $post->ID, $all_wp_pages );
-				$content = "";
+				$content = "<!-- for post [" . $post->ID . ", I found [" . count( $children ) . "] subpages -->
+";
 				foreach ( $children as $child ) {
-					$content .= "<h2 class='subpage_title'>$child->post_title</h2>
+					$content .= "<h2 class='subpage_title' style='cursor:pointer'>$child->post_title</h2>
 <div class='subpage_content' style='display:none'>
 $child->post_content
 </div>";
@@ -103,8 +104,6 @@ jQuery( function(){
     });
 /*]]>*/
 </script>";
-
-				// echo what we get back from WP to the browser
 				return $content;
 		}
 	}
