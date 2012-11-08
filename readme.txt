@@ -1,7 +1,7 @@
 === Subpage as Expandible Text Shortcode ===
 Contributors: HBJitney LLC
 Tags: navigation, pages, jquery, effect, text, embedded content
-Requires at least: 3.3.2
+Requires at least: 3.4.1
 Tested up to: 3.4.2
 Stable tag: trunk
 License: GPLv3
@@ -43,14 +43,19 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 **A3.** Make sure your page has sub-pages.
 
+= **Q.** It still isn't showing anything =
+
+**A.** This error has been reported and it is something happening on Wordpress's end, unfortunately. Sometimes Wordpress fails to mark a subpage as belonging to a specific post; when we ask Wordpress for all of a post's subposts, it tells us there aren't any (or all of them). We're looking at the problem to see if there's anything we can do on our end.
+
 == Screenshots ==
 1. Shortcode in parent post
 
-2. Public view
-
-3. Option screen
+2. Public view showing subpage's titles with one expanded
 
 == Changelog ==
+
+1.03 Expanded readme with information about an issue; added screenshots to zip
+
 1.01 Released with a debug fix, some formatting for the titles and code cleanup
 
 0.90 CSS change to title cursor
@@ -59,5 +64,5 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 == Upgrade Notice ==
 
-= 1.01 =
-Released
+= 1.03 =
+Documentation update
