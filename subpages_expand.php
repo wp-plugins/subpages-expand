@@ -120,12 +120,12 @@ jQuery( function(){
  * Sanity - was there a problem setting up the class? If so, bail with error
  * Otherwise, class is now defined; create a new one it to get the ball rolling.
  */
-if( class_exists( 'SupPageAsTabs' ) ) {
-	new SupPageAsTabs();
+if( class_exists( 'SupPagesExpand' ) ) {
+		new SupPagesExpand();
 } else {
 	$message = "<h2 style='color:red'>Error in plugin</h2>
 	<p>Sorry about that! Plugin <span style='color:blue;font-family:monospace'>subpages_expand_shortcode</span> reports that it was unable to start.</p>
-	<p><a href='mailto:support@hbjitney.com?subject=Subpages+as+Tabs+shortcode%20error&body=What version of Wordpress are you running? Please paste a list of your current active plugins here:'>Please report this error</a>.
+	<p><a href='mailto:support@hbjitney.com?subject=Subpages+Expand+shortcode%20error&body=What version of Wordpress are you running? Please paste a list of your current active plugins here:'>Please report this error</a>.
 	Meanwhile, here are some things you can try:</p>
 	<ul><li>Uninstall (delete) this plugin, then reinstall it.</li>
 	<li>Make sure you are running the latest version of the plugin; update the plugin if not.</li>
