@@ -2,7 +2,7 @@
 /*
  * Plugin Name: Subpages as Expandible Links Shortcode
  * Plugin URI: http://hbjitney.com/subpages-expand.html
- * Description: Add [subpages_expand] to any page to embed all subpages as content-expandible links at that location.
+ * Description: Add [subpages_expand] to any page to embed all subpages as content-expandable links at that location.
  * Version: 1.05
  * Author: HBJitney, LLC
  * Author URI: http://hbjitney.com/

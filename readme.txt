@@ -12,7 +12,7 @@ Add [subpages_expand] to any parent page. All child pages' titles are shown as l
 
 Intended users: editors, authors, contributers
 
-This plugin will allow you to display the content of subpages in form of expandible links.
+This plugin will allow you to display the content of subpages as expandable links.
 
 Simply add [subpages_expand] to any parent page. The titles of each of the subpages will be displayed there as clickable links. When the user clicks the link, it will expand, displaying the content of that child page.
 
@@ -52,6 +52,8 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 == Changelog ==
 
+1.05a Corrected spelling/grammar errors in documentation (no functionality change)
+
 1.05 Fixed issue with missing subpages
 
 1.03 Expanded readme with information about an issue; added screenshots to zip
@@ -64,5 +66,5 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 == Upgrade Notice ==
 
-= 1.05 =
-Missing subpage issue corrected
+= 1.05a =
+Optional upgrade to correct spelling/grammar errors in documentation.
