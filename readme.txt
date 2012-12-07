@@ -70,3 +70,4 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 = 1.07 =
 Fixed bug where shortcodes in the subpages weren't rendering
+
