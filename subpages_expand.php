@@ -88,9 +88,11 @@ if ( !class_exists('SupPagesExpand' ) ) {
 				) );
 
 				foreach ( $children as $child ) {
+					// Render any shortcodes in child pages
+					$new_content = do_shortcode( $child->post_content );
 					$content .= "<h2 class='subpage_title' style='cursor:pointer'>$child->post_title</h2>
 <div class='subpage_content' style='display:none'>
-$child->post_content
+$new_content
 </div>";
 				}
 

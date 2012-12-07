@@ -52,6 +52,8 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 == Changelog ==
 
+1.07 Fixed bug where shortcodes in the child pages weren't rendering
+
 1.05a Corrected spelling/grammar errors in documentation (no functionality change)
 
 1.05 Fixed issue with missing subpages
@@ -66,5 +68,5 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 == Upgrade Notice ==
 
-= 1.05a =
-Optional upgrade to correct spelling/grammar errors in documentation.
+= 1.07 =
+Fixed bug where shortcodes in the subpages weren't rendering
