@@ -2,7 +2,7 @@
 Contributors: HBJitney LLC
 Tags: navigation, pages, jquery, effect, text, embedded content
 Requires at least: 3.4.1
-Tested up to: 3.4.2
+Tested up to: 3.5.1
 Stable tag: trunk
 License: GPLv3
 
@@ -52,6 +52,8 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 == Changelog ==
 
+1.09 Fixed "Undefined variable: content" bug; cleaned up code
+
 1.07 Fixed bug where shortcodes in the child pages weren't rendering
 
 1.05a Corrected spelling/grammar errors in documentation (no functionality change)
@@ -68,6 +70,6 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 == Upgrade Notice ==
 
-= 1.07 =
-Fixed bug where shortcodes in the subpages weren't rendering
+= 1.09 =
+Bugfix
 
