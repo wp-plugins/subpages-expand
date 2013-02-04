@@ -72,4 +72,3 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 = 1.09 =
 Bugfix
-
