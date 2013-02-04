@@ -10,7 +10,7 @@ Add [subpages_expand] to any parent page. All child pages' titles are shown as l
 
 == Description ==
 
-Intended users: editors, authors, contributers
+Intended users: editors, authors, contributors
 
 This plugin will allow you to display the content of subpages as expandable links.
 
@@ -19,7 +19,7 @@ Simply add [subpages_expand] to any parent page. The titles of each of the subpa
 Clicking the title again will collapse the content.
 
 == Installation ==
-If you have a single file (ending in ".zip"), then use the *Upload* method. If you have multiple files, use the *Files* method. If you're installing from wordpress directly, just hit the big 'Install Plugin' button.
+If you have a single file (ending in ".zip"), then use the *Upload* method. If you have multiple files, use the *Files* method. If you're installing from WordPress directly, just hit the big 'Install Plugin' button.
 = Upload =
 1. From the plugins, add new screen, choose upload
 1. Navigate to where the .zip file is located and select it
@@ -45,12 +45,29 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 **A4.** Verify that your parent page and all child pages are published (not draft or pending)
 
+= Q. My page has more than one subpage, but only one is showing up! When I click the link the other subpages are in the text that appears. =
+
+**A.** You have an HTML error in one of your pages. If you have mismatched `div` tags, the child pages after that can get "trapped" in the first child's content.
+
+= Q. Error 324 (net::ERR_EMPTY_RESPONSE) =
+
+**A.** This error usually occurs when you try to have this shortcode on a child page.
+You cannot nest this shortcode (i.e., have it on a parent page and one of the child pages).
+
+= Q. It takes a long time for the page to display. =
+
+**A.** The time it takes for the page to display is the time it takes for **all** of the subpages' content to
+load. If you have subpages with lots of content (or javascript that loads in content), it will take time for
+WordPress to load that page.
+
 == Screenshots ==
 1. Shortcode in parent post
 
 2. Public view showing each subpage's title with one expanded
 
 == Changelog ==
+
+1.09a Not all child page links were displaying. Added additional FAQs that came up.
 
 1.09 Fixed "Undefined variable: content" bug; cleaned up code
 
@@ -70,5 +87,5 @@ If you have a single file (ending in ".zip"), then use the *Upload* method. If y
 
 == Upgrade Notice ==
 
-= 1.09 =
-Bugfix
+= 1.09a =
+Bugfix: not all of the child pages were displaying

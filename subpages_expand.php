@@ -76,24 +76,25 @@ if ( !class_exists('SupPagesExpand' ) ) {
 		 */
 		function render_subs( $attributes ) {
 			global $post;
+			$content = "";
 			// If a page, then do split
 			// Get ids of children
 			$children = get_pages( array(
-				'child_of' => $post->ID
+				'hierarchical' => 0
 				, 'parent' => $post->ID
 				, 'sort_column' => 'menu_order'
 			) );
 
 			foreach ( $children as $child ) {
-				$content = "";
 				// Render any shortcodes in child pages
-				$new_content = do_shortcode( $child->post_content );
+				$child_content = do_shortcode( $child->post_content );
 				$content .= "<h2 class='subpage_title' style='cursor:pointer'>$child->post_title</h2>
 <div class='subpage_content' style='display:none'>
-$new_content
+$child_content
 </div>";
 			}
 
+// TODO - externalize and enqueue script
 			$content .= "<script type='text/javascript'>
 /*<![CDATA[*/
 jQuery( function(){
