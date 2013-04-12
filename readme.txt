@@ -67,6 +67,10 @@ WordPress to load that page.
 
 == Changelog ==
 
+1.11 Button only appears on page editor now
+
+1.10 Added button to page editor * Added l10n support to button
+
 1.09a Not all child page links were displaying. Added additional FAQs that came up.
 
 1.09 Fixed "Undefined variable: content" bug; cleaned up code
@@ -87,5 +91,5 @@ WordPress to load that page.
 
 == Upgrade Notice ==
 
-= 1.09a =
-Bugfix: not all of the child pages were displaying
+= 1.11 =
+Shortcode button now only appears on page editor (shortcode doesn't work on posts, so there's no reason to show it there).
