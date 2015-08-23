@@ -2,7 +2,7 @@
 Contributors: HBJitney LLC
 Tags: navigation, pages, jquery, effect, text, embedded content
 Requires at least: 3.4.1
-Tested up to: 3.5.1
+Tested up to: 4.3
 Stable tag: trunk
 License: GPLv3
 
@@ -67,7 +67,7 @@ WordPress to load that page.
 
 == Changelog ==
 
-1.11 Button only appears on page editor now
+1.11 Button only appears on page editor now - tested up to 4.3
 
 1.10 Added button to page editor * Added l10n support to button
 
